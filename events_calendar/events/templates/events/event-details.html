@@ -1,0 +1,19 @@
+{% extends 'events/base.html' %}
+{% load static %}
+{% block title %}Event details{% endblock %}
+{% block content %}
+
+    <main>
+        <section class="details">
+            <h1>EVENT DETAILS</h1>
+            <ul class="event-details">
+                <li>Event name: {{ event.title }}</li>
+                <li>Event time: {{ event.start_time }}</li>       
+            </ul>
+            <a href="" class="edit-button">EDIT EVENT</a>
+            <a href="" class="delete-button">DELETE EVENT</a>
+            <a href="" class="calendar-button">VIEW CALENDAR</a>
+        </section>
+    </main>    
+
+{% endblock %}
