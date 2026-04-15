@@ -91,5 +91,17 @@ def next_week(request, event_id):
         return HttpResponse("next week")
     else:
         return HttpResponse("ERROR")
+    
+def next_day(request, event_id):
+
+    event = get_object_or_404(Event, id=event_id)
+    if request.method == 'POST':
+        next = event
+        next.id = None
+        next.start_time += timedelta(days=1)        
+        next.save()
+        return HttpResponse("next day")
+    else:
+        return HttpResponse("ERROR")
 
     
