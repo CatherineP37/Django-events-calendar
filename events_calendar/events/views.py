@@ -14,3 +14,37 @@ def event_details(request, event_id):
     event = Event.objects.get(id=event_id)
     context = {"event": event}
     return render(request, 'events/event_details.html', context)
+
+def get_date(selected_day):
+    if selected_day:
+        year, month = (int(x) for x in selected_day.split("-"))
+        return date(year, month, day=1)
+    return datetime.today()
+
+def previous_month(d):
+    first = d.replace(day=1)
+    previous_month = first - timedelta(days=1)
+    month = "month=" + str(previous_month.year) + "-" + str(previous_month.month)
+    return month
+
+def next_month(d):
+    days_in_month = calendar.monthrange(d.year, d.month)[1]
+    last = d.replace(day=days_in_month)
+    next_month = last + timedelta(days=1)
+    month = "month=" + str(next_month.year) + "-" + str(next_month.month)
+    return month
+
+class CalendarView(generic.ListView):
+    model = Event
+    template_name = "events/calendar.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        d = get_date(self.request.GET.get("month", None))
+        c = Calendar(d.year, d.month)
+        html_calendar = c.formatmonth(withyear=True)
+        context["calendar"] = mark_safe(html_calendar)
+        context["previous_month"] = previous_month(d)
+        context["next_month"] = next_month(d)
+        return context
+    
