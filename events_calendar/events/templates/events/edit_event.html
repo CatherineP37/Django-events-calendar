@@ -1,0 +1,16 @@
+{% extends 'events/base.html' %}
+{% load static %}
+{% block title %}Edit event{% endblock %}
+{% block content %}
+    <main>
+         <form method="post" class="event-form">
+            <h1>EDIT EVENT</h1>
+            {% csrf_token %}       
+            {{ form }}
+            <button type="submit">Edit event</button>        
+        </form>
+        <a href="{% url 'events:calendar' %}" class="calendar-button">View calendar</a>
+
+    </main>
+   
+{% endblock %}
