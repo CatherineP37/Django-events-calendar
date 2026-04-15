@@ -1,0 +1,21 @@
+{% extends 'events/base.html' %}
+{% load static %}
+{% block title %}Delete event{% endblock %}
+{% block content %}
+
+    <main>
+        <section class="details">
+            <h1>DELETE EVENT</h1>
+            <p>Are you sure you want to delete the following event?</p>
+            <h2>{{ event.title }}</h2>
+            <a href="{% url 'events:event_details' event.id %}" class="cancel-button">CANCEL</a>
+            <form method="post" class="delete-event">
+                {% csrf_token %}       
+                <button type="submit" class="delete-button">DELETE EVENT</button>       
+            </form>           
+        </section>
+
+    </main>
+   
+
+{% endblock %}

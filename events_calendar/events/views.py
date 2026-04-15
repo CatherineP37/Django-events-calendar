@@ -73,4 +73,12 @@ def edit_event(request, event_id):
     context = {"event":event, "form":form}
     return render(request, 'events/edit_event.html', context)
 
+def delete_event(request, event_id):
+    event = Event.objects.get(id=event_id)
+    if request.method == "POST":
+        event.delete()
+        return redirect('events:calendar')
+    context = {"event":event}
+    return render(request, 'events/delete_event.html', context)
+
     
