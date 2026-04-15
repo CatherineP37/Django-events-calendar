@@ -176,6 +176,15 @@ main {
     gap: 16px;
 }
 
+.delete-event {
+    background-color: #FFFFFF;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;    
+}
+
 @media screen and (min-width: 576px) {
 
     main {
