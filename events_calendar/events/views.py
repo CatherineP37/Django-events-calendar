@@ -9,6 +9,7 @@ from django.urls import reverse
 from django.shortcuts import get_object_or_404
 from events.models import Event
 from events.utils import Calendar
+from events.forms import EventForm, EditEventForm
 
 def event_details(request, event_id):
     event = Event.objects.get(id=event_id)
@@ -47,4 +48,18 @@ class CalendarView(generic.ListView):
         context["previous_month"] = previous_month(d)
         context["next_month"] = next_month(d)
         return context
+
+def new_event(request):
+    form = EventForm(request.POST or None)
+    if request.POST and form.is_valid():
+        title = form.cleaned_data["title"]        
+        start_time = form.cleaned_data["start_time"]        
+        Event.objects.get_or_create(           
+            title=title,            
+            start_time=start_time,            
+        )
+        return HttpResponseRedirect(reverse("events:calendar"))
+    context = {"form":form}
+    return render(request, "events/new_event.html", context)
+
     
