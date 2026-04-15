@@ -169,7 +169,12 @@ main {
     width: 100%;
 }
 
-
+.event-details {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
 
 @media screen and (min-width: 576px) {
 
