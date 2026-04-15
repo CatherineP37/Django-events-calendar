@@ -1,0 +1,87 @@
+* {
+	margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;	
+}
+
+body {
+    font-family: "Arial";
+    background-color: #F6D050;
+}
+
+.calendar-container {
+    background-color: #FFFFFF;
+    width: 90%;
+    padding: 8px 1rem 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 50px auto 0 auto;
+    border: 3px solid #000000;
+    box-shadow: 4px 4px 0 0 hsl(0, 0%, 0%); 
+}
+
+table {
+    background-color: #FFFFFF;       
+    width: 100%;
+}
+
+.calendar-header {
+    background-color: #FFFFFF;   
+    width: 100%;       
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.back-button, .forward-button {
+    display: block;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #000000;
+    background-color: #F6D050;
+    border-radius: 50%;
+    border: 2px solid #000000;
+    padding: 8px 20px;
+    transition-property: background-color;
+    transition-timing-function: ease-in;
+    transition-duration: .2s;  
+}
+
+.title-container {    
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.back-button:hover, .forward-button:hover {
+    background-color: #FFEBA6;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 576px) {
+
+    
+
+}
+
+@media screen and (min-width: 768px) {
+    
+   
+}
+
+@media screen and (min-width: 1000px) {
+
+    .calendar-container {
+        width: 80%;
+    }
+}
+
+    
+
+@media screen and (min-width: 1200px) {
+   
+}
