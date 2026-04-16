@@ -120,6 +120,27 @@ table ul li a:hover {
     cursor: pointer;
 }
 
+.event-button {
+    display: inline-block;
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    border: 2px solid #000000;
+    padding: 16px 1rem;
+    transition-property: background-color;
+    transition-timing-function: ease-in;
+    transition-duration: .2s;
+}
+
+.event-button:hover {
+    background-color: #FFF5D3;
+    cursor: pointer;
+}
+
 main {
     width: 90%;
     margin: 50px auto 0 auto;
