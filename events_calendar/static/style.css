@@ -10,6 +10,8 @@ body {
     background-color: #F6D050;
 }
 
+/* Calendar container */
+
 .calendar-container {
     background-color: #FFFFFF;
     width: 97%;
@@ -21,6 +23,8 @@ body {
     border: 3px solid #000000;
     box-shadow: 4px 4px 0 0 hsl(0, 0%, 0%); 
 }
+
+/* Calendar header */
 
 .calendar-header {
     background-color: #FFFFFF;   
@@ -87,6 +91,8 @@ body {
     background-color: #FFEBA6;
     cursor: pointer;
 }
+
+/* Calendar */
 
 table {
     background-color: #FFFFFF;       
@@ -160,6 +166,8 @@ table ul li a:hover {
     cursor: pointer;
 }
 
+/* Main */
+
 main {
     width: 90%;
     margin: 50px auto 0 auto;
@@ -167,6 +175,8 @@ main {
     flex-direction: column;
     gap: 24px;    
 }
+
+/* Event form */
 
 .event-form, .details {
     background-color: #FFFFFF;
@@ -215,6 +225,8 @@ main {
     flex-direction: column;
     gap: 16px;
 }
+
+/* Form for deleting an event */
 
 .delete-event {
     background-color: #FFFFFF;
