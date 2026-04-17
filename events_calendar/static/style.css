@@ -272,6 +272,23 @@ main {
 }
 
 @media screen and (min-width: 768px) {
+
+    /* Calendar */
+
+    td {       
+        padding: 0.5rem;               
+    }
+
+    table ul li a {
+        display: block;
+        background-color: #F6D050;
+        padding: 4px 0.25rem;
+        border: 2px solid #000000;
+        border-radius: 8px;
+        text-decoration: none;
+        color: #000000;
+        font-size: 1rem;
+    }
     
    
 }
