@@ -103,8 +103,7 @@ table {
 table tr {
     padding: 0;
     margin: 0;
-    width: auto;
-    background-color: lime;
+    width: auto;    
 }
 
 table th {
@@ -145,7 +144,7 @@ td {
 }
 
 table ul {
-    list-style-type: disc;
+    list-style-type: none;
     list-style-position: inside;
     display: flex;
     flex-direction: column;
@@ -154,14 +153,18 @@ table ul {
 }
 
 table ul li a {
+    display: block;
+    background-color: #F6D050;
+    padding: 4px 0.25rem;
+    border: 2px solid #000000;
+    border-radius: 8px;
     text-decoration: none;
     color: #000000;
+    font-size: 0.5rem;
 }
 
 table ul li a:hover {
-    text-decoration-line: underline;        
-    text-decoration-color: #131515;        
-    text-underline-offset: 5px;
+    background-color: #FFEBA6;
     cursor: pointer;
 }
 
