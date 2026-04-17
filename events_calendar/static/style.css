@@ -275,10 +275,11 @@ main {
     td {       
         padding: 0.5rem;               
     }
-
+     
      .content {    
-        min-height: 200px;    
+        min-height: 120px;    
     }
+
     
     table ul li a {        
         font-size: 1rem;
@@ -289,7 +290,16 @@ main {
 
 @media screen and (min-width: 1000px) {
 
+    /* Calendar container */
 
+    .calendar-container {    
+        width: 90%;          
+    }
+
+    
+     .content {    
+        min-height: 150px;    
+    }
  
 }
 
