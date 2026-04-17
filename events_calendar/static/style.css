@@ -243,41 +243,44 @@ main {
     /* Calendar container */
 
     .calendar-container {    
-        width: 85%; 
+        width: 97%; 
         box-shadow: 4px 4px 0 0 hsl(0, 0%, 0%);       
     }
 
     /* Calendar header */
 
     .calendar-header {       
-        width: 90%;     
+        width: 95%;     
     }
 
     /* Calendar */
 
     table {            
-        width: 90%;        
+        width: 97%;        
     }
-
-    .content {    
-        min-height: 200px;    
-    }
-
-
-  
-
- 
 
 
 }
 
 @media screen and (min-width: 768px) {
 
+    /* Calendar container */
+
+    .calendar-container {    
+        width: 95%; 
+        box-shadow: 4px 4px 0 0 hsl(0, 0%, 0%);       
+    }
+
     /* Calendar */
 
     td {       
         padding: 0.5rem;               
     }
+
+     .content {    
+        min-height: 200px;    
+    }
+
 
     table ul li a {
         display: block;
