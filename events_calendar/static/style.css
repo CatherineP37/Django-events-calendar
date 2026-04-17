@@ -279,24 +279,18 @@ main {
      .content {    
         min-height: 200px;    
     }
-
-
-    table ul li a {
-        display: block;
-        background-color: #F6D050;
-        padding: 4px 0.25rem;
-        border: 2px solid #000000;
-        border-radius: 8px;
-        text-decoration: none;
-        color: #000000;
+    
+    table ul li a {        
         font-size: 1rem;
     }
-    
+
    
 }
 
 @media screen and (min-width: 1000px) {
 
+
+ 
 }
 
     
