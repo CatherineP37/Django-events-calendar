@@ -277,6 +277,10 @@ main {
     padding: 16px 1rem;    
 }
 
+.edit-button a {
+    background-color: #FFEBA6;
+}
+
 @media screen and (min-width: 576px) {
 
     /* Calendar container */
