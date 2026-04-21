@@ -291,7 +291,11 @@ main {
         font-size: 1rem;
     }
 
-   
+    /* Main */
+
+    main {
+        width: 85%;
+    }   
 }
 
 @media screen and (min-width: 1000px) {
@@ -301,10 +305,15 @@ main {
     .calendar-container {    
         width: 90%;          
     }
-
     
      .content {    
         min-height: 150px;    
+    }
+
+    /* Main */
+
+    main {
+        width: 80%;
     }
  
 }
@@ -312,5 +321,10 @@ main {
     
 
 @media screen and (min-width: 1200px) {
+
+    main {
+        width: 70%;
+        max-width: 1000px;
+    }
    
 }
