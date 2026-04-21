@@ -274,10 +274,13 @@ main {
     background-color: #F6D050;
     border-radius: 8px;
     border: 2px solid #000000;
-    padding: 16px 1rem;    
+    padding: 16px 1rem;
+    transition-property: background-color;
+    transition-timing-function: ease-in;
+    transition-duration: .2s;    
 }
 
-.edit-button a {
+.edit-button a:hover {
     background-color: #FFEBA6;
 }
 
