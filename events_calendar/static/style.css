@@ -192,6 +192,7 @@ main {
 
 .event-form button {    
     color: #000000;
+    font-size: 1rem;
     width: 100%;
     text-align: center;
     background-color: #F6D050;
