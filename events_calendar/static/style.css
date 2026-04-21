@@ -284,6 +284,21 @@ main {
     background-color: #FFEBA6;
 }
 
+/* Link to page for deleting an event */
+
+.delete-button {
+    display: inline-block;
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #BA1A1A;
+    border-radius: 8px;
+    border: 2px solid #BA1A1A;
+    padding: 16px 1rem;   
+}
+
 @media screen and (min-width: 576px) {
 
     /* Calendar container */
