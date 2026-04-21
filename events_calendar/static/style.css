@@ -239,6 +239,28 @@ main {
     gap: 32px;    
 }
 
+/* Link to calendar page */
+
+.calendar-button {
+    display: inline-block;
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #000000;
+    border-radius: 8px;
+    border: 2px solid #000000;
+    padding: 16px 1rem;
+    transition-property: background-color;
+    transition-timing-function: ease-in;
+    transition-duration: .2s;
+}
+
+.calendar-button:hover {
+    background-color: #3B3B3B;
+}
+
 @media screen and (min-width: 576px) {
 
     /* Calendar container */
