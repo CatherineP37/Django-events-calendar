@@ -299,6 +299,10 @@ main {
     padding: 16px 1rem;   
 }
 
+.delete-button:hover {
+    background-color: #C43737;
+}
+
 @media screen and (min-width: 576px) {
 
     /* Calendar container */
