@@ -296,7 +296,10 @@ main {
     background-color: #BA1A1A;
     border-radius: 8px;
     border: 2px solid #BA1A1A;
-    padding: 16px 1rem;   
+    padding: 16px 1rem;
+    transition-property: background-color;
+    transition-timing-function: ease-in;
+    transition-duration: .2s;   
 }
 
 .delete-button:hover {
