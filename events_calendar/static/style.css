@@ -262,7 +262,7 @@ main {
     background-color: #3B3B3B;
 }
 
-/* Link to page for editing event */
+/* Edit button, delete button and cancel button */
 
 .edit-button {
     display: inline-block;
@@ -283,8 +283,6 @@ main {
 .edit-button:hover {
     background-color: #FFEBA6;
 }
-
-/* Link to page for deleting an event */
 
 .delete-button {
     display: inline-block;
@@ -340,16 +338,38 @@ main {
         width: 95%;     
     }
 
+    .event-button {
+        width: 80%;
+    }
+
     /* Calendar */
 
     table {            
         width: 97%;        
-    }
+    }    
 
     /* Main */
 
     main {
         width: 90%;
+    }
+
+    /* Event form */
+
+    .event-form button {
+        width: 80%;
+    }
+
+    /* Link to calendar page */
+
+    .calendar-button {    
+        width: 80%;    
+    }
+
+    /* Edit button, delete button and cancel button */
+
+    .edit-button, .delete-button, .cancel-button {
+        width: 80%;
     }
 
 
