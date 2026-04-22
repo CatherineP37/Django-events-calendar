@@ -319,6 +319,10 @@ main {
     padding: 16px 1rem;  
 }
 
+.cancel-button:hover {
+    background-color: #ECE7E7;
+}
+
 @media screen and (min-width: 576px) {
 
     /* Calendar container */
