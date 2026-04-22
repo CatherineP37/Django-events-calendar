@@ -154,6 +154,7 @@ table ul {
 table ul li a {
     display: block;
     background-color: #F6D050;
+    text-align: center;
     padding: 4px 0.25rem;
     border: 2px solid #000000;
     border-radius: 8px;
