@@ -340,7 +340,7 @@ main {
     }
 
     .event-button {
-        width: 75%;
+        width: 70%;
     }
 
     /* Calendar */
@@ -358,19 +358,19 @@ main {
     /* Event form */
 
     .event-form button {
-        width: 75%;
+        width: 70%;
     }
 
     /* Link to calendar page */
 
     .calendar-button {    
-        width: 75%;    
+        width: 70%;    
     }
 
     /* Edit button, delete button and cancel button */
 
     .edit-button, .delete-button, .cancel-button {
-        width: 75%;
+        width: 70%;
     }
 }
 
@@ -386,7 +386,7 @@ main {
     /* Calendar header */
 
     .event-button {
-        width: 70%;
+        width: 60%;
     }
 
     /* Calendar */
@@ -410,22 +410,22 @@ main {
         width: 85%;
     }
     
-        /* Event form */
+    /* Event form */
 
     .event-form button {
-        width: 70%;
+        width: 60%;
     }
 
     /* Link to calendar page */
 
     .calendar-button {    
-        width: 70%;    
+        width: 60%;    
     }
 
     /* Edit button, delete button and cancel button */
 
     .edit-button, .delete-button, .cancel-button {
-        width: 70%;
+        width: 60%;
     }
 }
 
@@ -441,10 +441,35 @@ main {
         min-height: 150px;    
     }
 
+     /* Calendar header */
+
+    .event-button {
+        width: 50%;
+    }
+
+
     /* Main */
 
     main {
         width: 80%;
+    }
+
+    /* Event form */
+
+    .event-form button {
+        width: 50%;
+    }
+
+    /* Link to calendar page */
+
+    .calendar-button {    
+        width: 50%;    
+    }
+
+    /* Edit button, delete button and cancel button */
+
+    .edit-button, .delete-button, .cancel-button {
+        width: 50%;
     }
 
  
