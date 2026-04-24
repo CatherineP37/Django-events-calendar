@@ -435,7 +435,7 @@ main {
     /* Calendar container */
 
     .calendar-container {    
-        width: 90%;          
+        width: 85%;          
     }
     
      .content {    
@@ -479,6 +479,14 @@ main {
     
 
 @media screen and (min-width: 1200px) {
+
+    /* Calendar container */
+
+    .calendar-container {
+        width: 80%;
+    }
+
+    /* Main */
 
     main {
         width: 70%;
