@@ -379,7 +379,8 @@ main {
 
     /* Calendar container */
 
-    .calendar-container {    
+    .calendar-container {
+        margin: 50px auto 0 auto; 
         width: 95%; 
         box-shadow: 4px 4px 0 0 hsl(0, 0%, 0%);       
     }
@@ -434,7 +435,7 @@ main {
 
     /* Calendar container */
 
-    .calendar-container {    
+    .calendar-container {        
         width: 85%;          
     }
     
